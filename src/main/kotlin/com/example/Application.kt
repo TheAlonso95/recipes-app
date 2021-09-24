@@ -5,7 +5,7 @@ import io.ktor.server.netty.*
 import com.example.plugins.*
 
 fun main() {
-    embeddedServer(Netty, port = 8080, host = "recipes") {
+    embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
         configureRouting()
         configureHTTP()
         configureSockets()
